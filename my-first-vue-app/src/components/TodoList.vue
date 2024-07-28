@@ -56,7 +56,7 @@
 <template>
     <ul>
         <li v-for="(item, key) in listItems" :key="key">
-            <ListItem :is-checked="item.checked" @update="updateItem(item)">{{ item.title }}</ListItem>
+            <ListItem v-if="item.checked !== undefined" :is-checked="item.checked" @update="updateItem(item)">{{ item.title }}</ListItem>
         </li>
     </ul>
 </template>
