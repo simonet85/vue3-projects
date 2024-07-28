@@ -5,8 +5,8 @@
 
 <template>
   <main>
-    <AppHeader></AppHeader>
-    <TodoList></TodoList>
+    <AppHeader />
+    <TodoList />
   </main>
 </template>
 
